@@ -44,14 +44,14 @@ h2 {
 	list-style: none;
 }
 
-#top-header nav ul #menu-normal li {
+#menu-normal li {
 	float: left;
 	margin-right: 40px;
 }
 
 
 @media (max-width: 840px) {
-	#top-header nav ul #menu-normal li  {
+	#menu-normal li  {
 	    display: none;
 	}	
 }
