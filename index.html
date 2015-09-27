@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<div id="top-header"> 
+		<div id="top-header" class = "fixed-position"> 
 			<nav>
 				<div id="menu-toggle">
 					<a href="">Menu</a>
@@ -66,7 +66,7 @@
 			$("#menu-toggle").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
-				$("#top-header").css("position", "relative");
+				$("#top-header").toggleClass("slide-down").toggleClass("fixed-position");
 			});
 		</script>
 	</body>

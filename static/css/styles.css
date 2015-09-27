@@ -24,7 +24,6 @@ h2 {
 #top-header {
 	background: transparent;
     padding: 16px 0 15px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -36,7 +35,11 @@ h2 {
     -ms-transition: background 460ms ease-out;
 }
 
-#top-header .slide-down {
+.fixed-position {
+	 position: fixed;
+}
+
+.slide-down {
 	position: relative; 
 	background-color: #F8EFEA; 
 }
