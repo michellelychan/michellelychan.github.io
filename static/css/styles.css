@@ -76,14 +76,25 @@ h2 {
 	text-decoration: none; 
 	position: relative;
 	display: none;
-	text-align: right; 
-	margin-right: 40px;
+	text-align: center; 
+	margin-right: 40px; 
 }
 
 @media (max-width: 840px) {
 	#menu-toggle {
 	    display: block;
 	}	
+}
+
+#menu-toggle ul {
+	display: none;
+	list-style: none; 
+	padding: 0;
+	margin: 1em 0 0 0;
+}
+
+#menu-toggle.nav-open ul {
+	display: block;
 }
 
 #title-banner {
