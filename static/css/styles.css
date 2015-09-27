@@ -47,7 +47,7 @@ h2 {
 }
 
 #menu-normal li {
-	/* float: left; */ 
+	float: left;
 	margin-right: 40px;
 }
 
