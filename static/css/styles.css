@@ -6,15 +6,17 @@ a {
 }
 
 h4 {
-	font-family: SourceSansPro-Bold;
+	font-family: SourceSansPro-Bold, "Helvetica", "Arial", sans-serif;
 	font-size: 19px;
+	font-weight: bold;
 	color: #000000;
 	line-height: 30px;
 }
 
 h2 {
-	font-family: SourceSansPro-Bold;
+	font-family: SourceSansPro-Bold, "Helvetica", "Arial", sans-serif;
 	font-size: 40px;
+	font-weight: bold;
 	color: #4A4A4A;
 	line-height: 50px;
 }
