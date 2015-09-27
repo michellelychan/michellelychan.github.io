@@ -20,3 +20,10 @@ h2 {
 	color: #4A4A4A;
 	line-height: 50px;
 }
+
+#title-banner {
+	background-color: #F8EFEA;
+	position: relative; 
+	padding: 15rem 0 12rem 0;
+	max-height: 90%;
+}
