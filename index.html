@@ -36,7 +36,7 @@
 					</ul>
 				</div>
 
-				<ul>
+				<ul id="menu-normal">
 					<li>
 						<a href="">Resume</a>
 					</li>
@@ -64,7 +64,7 @@
 
 		<script type="text/javascript">
 			$("#menu-toggle").click(function(e) {
-				$("#menu-toggle > ul").toggleClass("nav-open");
+				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
 			});
 		</script>
