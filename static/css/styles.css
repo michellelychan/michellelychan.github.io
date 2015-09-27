@@ -36,7 +36,7 @@ h2 {
     -ms-transition: background 460ms ease-out;
 }
 
-#top-header .slide-down {
+.slide-down {
 	position: relative; 
 	background-color: #F8EFEA; 
 }
