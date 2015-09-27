@@ -36,16 +36,18 @@ h2 {
     -ms-transition: background 460ms ease-out;
 }
 
-#top-header nav {
-	float:right;
-}
+
 
 #top-header nav ul {
 	list-style: none;
 }
 
+#menu-normal{
+	float:right;
+}
+
 #menu-normal li {
-	float: left;
+	/* float: left; */ 
 	margin-right: 40px;
 }
 
@@ -78,6 +80,7 @@ h2 {
 	display: none;
 	text-align: center; 
 	margin-right: 40px; 
+	float: middle;
 }
 
 @media (max-width: 840px) {
