@@ -36,7 +36,10 @@ h2 {
     -ms-transition: background 460ms ease-out;
 }
 
-
+#top-header .slide-down {
+	position: relative; 
+	background-color: #F8EFEA; 
+}
 
 #top-header nav ul {
 	list-style: none;
