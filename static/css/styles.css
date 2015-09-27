@@ -44,6 +44,11 @@ h2 {
 	list-style: none;
 }
 
+#top-header nav ul li {
+	float: left;
+	margin-left: 50px;
+}
+
 #top-header nav ul li a{
 	font-family: SourceSansPro-Semibold;
 	font-size: 20px;
