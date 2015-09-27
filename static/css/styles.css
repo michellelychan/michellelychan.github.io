@@ -59,6 +59,11 @@ h2 {
 	position: relative;
 }
 
+@media (max-width: 840px)
+#top-header nav ul li  {
+    display: none;
+}
+
 #title-banner {
 	background-color: #F8EFEA;
 	position: relative; 
