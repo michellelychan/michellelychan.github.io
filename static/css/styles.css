@@ -21,6 +21,39 @@ h2 {
 	line-height: 50px;
 }
 
+#top-header {
+	background: transparent;
+    padding: 16px 0 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: background 460ms ease-out;
+    -webkit-transition: background 460ms ease-out;
+    -moz-transition: background 460ms ease-out;
+    -o-transition: background 460ms ease-out;
+    -ms-transition: background 460ms ease-out;
+}
+
+#top-header nav {
+	float:right;
+}
+
+#top-header nav ul {
+	list-style: none;
+}
+
+#top-header nav ul li a{
+	font-family: SourceSansPro-Semibold;
+	font-size: 20px;
+	color: #D1D1D1;
+	line-height: 25px;
+	text-transform: uppercase;
+	text-decoration: none; 
+	position: relative;
+}
+
 #title-banner {
 	background-color: #F8EFEA;
 	position: relative; 
