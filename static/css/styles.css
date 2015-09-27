@@ -58,19 +58,23 @@ h2 {
 
 
 #top-header nav ul li a{
-	text-decoration: none; 
-	position: relative;
-}
-
-.header-title {
 	font-family: SourceSansPro-Semibold;
 	font-size: 20px;
 	color: #D1D1D1;
 	line-height: 25px;
 	text-transform: uppercase;
+	text-decoration: none; 
+	position: relative;
 }
 
 #menu-toggle {
+	font-family: SourceSansPro-Semibold;
+	font-size: 20px;
+	color: #000000;
+	line-height: 25px;
+	text-transform: uppercase;
+	text-decoration: none; 
+	position: relative;
 	display: none;
 	text-align: right; 
 	margin-right: 40px;
