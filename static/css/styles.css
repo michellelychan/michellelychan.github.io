@@ -49,15 +49,6 @@ h2 {
 	margin-right: 40px;
 }
 
-#top-header nav ul li a{
-	font-family: SourceSansPro-Semibold;
-	font-size: 20px;
-	color: #D1D1D1;
-	line-height: 25px;
-	text-transform: uppercase;
-	text-decoration: none; 
-	position: relative;
-}
 
 @media (max-width: 840px) {
 	#top-header nav ul li  {
@@ -65,6 +56,31 @@ h2 {
 	}	
 }
 
+
+#top-header nav ul li a{
+	text-decoration: none; 
+	position: relative;
+}
+
+.header-title {
+	font-family: SourceSansPro-Semibold;
+	font-size: 20px;
+	color: #D1D1D1;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+#menu-toggle {
+	display: none;
+	text-align: right; 
+	margin-right: 40px;
+}
+
+@media (max-width: 840px) {
+	#menu-toggle {
+	    display: block;
+	}	
+}
 
 #title-banner {
 	background-color: #F8EFEA;
