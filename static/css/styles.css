@@ -38,7 +38,7 @@ h2 {
 	background-color: #F8EFEA; 
 }
 
-#top-header nav ul {
+#top-header nav ul, #top-header nav a {
 	list-style: none;
 }
 
@@ -71,14 +71,6 @@ h2 {
 }
 
 #menu-toggle {
-	font-family: 'Source Sans Pro';
-	font-weight: 500;
-	font-size: 20px;
-	color: #000000;
-	line-height: 25px;
-	text-transform: uppercase;
-	text-decoration: none; 
-	position: relative;
 	display: none;
 	text-align: center; 
 	margin-right: 40px; 
