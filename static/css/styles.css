@@ -24,7 +24,7 @@ h2 {
 /* the overall top navigation bar */ 
 #top-header {
 	background: #F8EFEA; 
-    padding: 16px 0 15px;
+    padding: 8px 0 8px;
     width: 100%;
     top: 0;
     left: 0;
@@ -52,12 +52,11 @@ h2 {
 #menu-toggle {
 	display: none;
 	text-align: center; 
-	margin-right: 40px; 
-	margin-top: 16px;
+	margin-top: 8px;
 	float: middle;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 768px) {
 	#menu-toggle {
 	    display: block;
 	}	
@@ -95,7 +94,7 @@ h2 {
 }
 
 
-@media (max-width: 840px) {
+@media (max-width: 768px) {
 	#menu-normal li  {
 	    display: none;
 	}	
@@ -114,21 +113,28 @@ h2 {
 .background-lg-text {
 	font-family: OpenSans-Bold, Helvetica, Arial, sans-serif;
 	font-size: 202px;
+	font-size: 15vw; 
 	color: #FFCCC9;
-	line-height: 200px;
+	line-height: 1em;
 	text-align: right;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .tagline {
 	font-family: PlayfairDisplay-Regular, 'Georgia', serif;
 	font-size: 60px;
+	font-size: 4.5vw;
 	color: #000000;
 	line-height: 85px;
+	line-height: 1.5em;
 }
+
+
 
 .tagline-box {
 	width: 380px;
+	width: 30vw;
 	margin-left: auto; 
 	margin-right: auto; 
 	border: 5px solid #000000;
@@ -138,3 +144,24 @@ h2 {
 	right: 0;
 	top: 120px;
 }
+
+@media (max-width: 768px) {
+	.tagline {
+	    font-size: 35px;
+	    line-height: 52px;
+	}	
+	.title-banner {
+		padding:100px 20px 220px 20px;
+	}
+	.tagline-box {
+		width: 230px;
+		top: 250px;
+	}
+}
+
+@media (max-width: 460px) {
+	.background-lg-text {
+		text-align: center;
+	}
+}
+
