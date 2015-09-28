@@ -1,3 +1,5 @@
+/* General */ 
+
 a {
 	font-family: PTSerif-Regular;
 	font-size: 19px;
@@ -6,20 +8,20 @@ a {
 }
 
 h4 {
-	font-family: SourceSansPro-Bold, "Helvetica", "Arial", sans-serif;
+	font-family: SourceSansPro-Regular, 'Helvetica', 'Arial', sans-serif;
 	font-size: 19px;
 	color: #000000;
 	line-height: 30px;
 }
 
 h2 {
-	font-family: SourceSansPro-Bold, "Helvetica", "Arial", sans-serif;
+	font-family: SourceSansPro-Bold, 'Helvetica', 'Arial', sans-serif;
 	font-size: 40px;
-	font-weight: bold;
 	color: #4A4A4A;
 	line-height: 50px;
 }
 
+/* the overall top navigation bar */ 
 #top-header {
 	background: #F8EFEA; 
     padding: 16px 0 15px;
@@ -29,35 +31,9 @@ h2 {
     z-index: 20;
 }
 
-.fixed-position {
-	 position: fixed;
-}
-
-.slide-down {
-	position: relative; 
-	background-color: #F8EFEA; 
-}
-
-#menu-normal{
-	float:right;
-}
-
-#menu-normal li {
-	float: left;
-	margin-right: 40px;
-}
-
-
-@media (max-width: 840px) {
-	#menu-normal li  {
-	    display: none;
-	}	
-}
-
 
 #top-header nav ul li a, #top-header nav ul li, #menu-toggle a {
-	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
-	font-weight: 500;
+	font-family: SourceSansPro-Regular, 'Helvetica', sans-serif;
 	font-size: 20px;
 	color: #D1D1D1;
 	line-height: 25px;
@@ -67,6 +43,12 @@ h2 {
 	position: relative;
 }
 
+.fixed-position {
+	 position: fixed;
+}
+
+
+/* The minimized toggle menu */ 
 #menu-toggle {
 	display: none;
 	text-align: center; 
@@ -96,9 +78,63 @@ h2 {
 	color: #000000;
 }
 
-#title-banner {
+.slide-down {
+	position: relative; 
+	background-color: #F8EFEA; 
+}
+
+
+/* The normal menu */ 
+#menu-normal{
+	float:right;
+}
+
+#menu-normal li {
+	float: left;
+	margin-right: 40px;
+}
+
+
+@media (max-width: 840px) {
+	#menu-normal li  {
+	    display: none;
+	}	
+}
+
+
+/* Design of the Banner */ 
+
+.title-banner {
 	background-color: #F8EFEA;
 	position: relative; 
-	padding: 5rem 0;
+	padding: 5rem 4rem 12rem 4rem;
 	max-height: 90%;
+}
+
+.background-lg-text {
+	font-family: OpenSans-Bold, Helvetica, Arial, sans-serif;
+	font-size: 202px;
+	color: #FFCCC9;
+	line-height: 200px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.tagline {
+	font-family: PlayfairDisplay-Regular, 'Georgia', serif;
+	font-size: 60px;
+	color: #000000;
+	line-height: 85px;
+}
+
+.tagline-box {
+	width: 380px;
+	margin-left: auto; 
+	margin-right: auto; 
+	border: 5px solid #000000;
+	padding: 40px 50px 50px 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 120px;
 }
