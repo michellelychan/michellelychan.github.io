@@ -27,11 +27,6 @@ h2 {
     top: 0;
     left: 0;
     z-index: 20;
-    transition: background 460ms ease-out;
-    -webkit-transition: background 460ms ease-out;
-    -moz-transition: background 460ms ease-out;
-    -o-transition: background 460ms ease-out;
-    -ms-transition: background 460ms ease-out;
 }
 
 .fixed-position {
@@ -66,6 +61,7 @@ h2 {
 
 #top-header nav ul li a{
 	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+	font-weight: 500;
 	font-size: 20px;
 	color: #D1D1D1;
 	line-height: 25px;
@@ -76,6 +72,7 @@ h2 {
 
 #menu-toggle {
 	font-family: 'Source Sans Pro';
+	font-weight: 500;
 	font-size: 20px;
 	color: #000000;
 	line-height: 25px;
