@@ -1,21 +1,24 @@
 /* General */ 
 
 a {
-	font-family: PTSerif-Regular;
+	font-family: 'PT Serif';
+	font-weight: 400;
 	font-size: 19px;
 	color: #000000;
 	line-height: 30px;
 }
 
 h4 {
-	font-family: SourceSansPro-Regular, 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
 	font-size: 19px;
 	color: #000000;
 	line-height: 30px;
 }
 
 h2 {
-	font-family: SourceSansPro-Bold, 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 700;
 	font-size: 40px;
 	color: #4A4A4A;
 	line-height: 50px;
@@ -33,7 +36,8 @@ h2 {
 
 
 #top-header nav ul li a, #top-header nav ul li, #menu-toggle a {
-	font-family: SourceSansPro-Regular, 'Helvetica', sans-serif;
+	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+	font-weight: 500;
 	font-size: 20px;
 	color: #D1D1D1;
 	line-height: 25px;
@@ -123,7 +127,8 @@ h2 {
 }
 
 .tagline {
-	font-family: PlayfairDisplay-Regular, 'Georgia', serif;
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-weight: 500;
 	font-size: 60px;
 	font-size: 4.5vw;
 	color: #000000;
