@@ -65,7 +65,7 @@ h2 {
 
 
 #top-header nav ul li a{
-	font-family: SourceSansPro-Semibold;
+	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
 	font-size: 20px;
 	color: #D1D1D1;
 	line-height: 25px;
@@ -75,7 +75,7 @@ h2 {
 }
 
 #menu-toggle {
-	font-family: SourceSansPro-Semibold;
+	font-family: 'Source Sans Pro';
 	font-size: 20px;
 	color: #000000;
 	line-height: 25px;
