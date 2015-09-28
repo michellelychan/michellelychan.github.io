@@ -38,10 +38,6 @@ h2 {
 	background-color: #F8EFEA; 
 }
 
-#top-header nav ul, #top-header nav a {
-	list-style: none;
-}
-
 #menu-normal{
 	float:right;
 }
@@ -59,7 +55,7 @@ h2 {
 }
 
 
-#top-header nav ul li a{
+#top-header nav ul li a, #menu-toggle a {
 	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
 	font-weight: 500;
 	font-size: 20px;
@@ -67,6 +63,7 @@ h2 {
 	line-height: 25px;
 	text-transform: uppercase;
 	text-decoration: none; 
+	list-style: none;
 	position: relative;
 }
 
@@ -92,6 +89,10 @@ h2 {
 
 #menu-toggle ul.nav-open {
 	display: block;
+}
+
+#menu-toggle a {
+	color: #000000;
 }
 
 #title-banner {
