@@ -29,11 +29,11 @@
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 0px) and (max-width: 419px) {
+    @media screen and (min-width: 0px) and (max-width: 600px) {
         
         .col {
-            margin-left:2%;
-        	padding:0 1.5%;
+            margin-left:1%;
+        	padding:0 1%;
         }
         
         .row .col:first-child {
@@ -68,11 +68,11 @@
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 420px) and (max-width: 799px) {
+    @media screen and (min-width: 600px) and (max-width: 1080px) {
         
         .col {
-            margin-left:2%;
-        	padding:0 1.5%;
+            margin-left:1%;
+        	padding:0 1%;
         }
         
         .row .col:first-child {
@@ -82,10 +82,10 @@
         
         
         .span_1 {
-            width:32.0%;
+            width:49.0%;
         }
         .span_2 {
-            width:66.0%;
+            width:49.0%;
         }
         .span_3 {
             margin-left:0;
@@ -105,11 +105,11 @@
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1080px) {
         
         .col {
-            margin-left:2%;
-        	padding:0 1.5%;
+            margin-left:1%;
+        	padding:0 1%;
         }
         
         .row .col:first-child {

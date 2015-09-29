@@ -24,6 +24,7 @@ h2 {
 	line-height: 50px;
 }
 
+
 /* the overall top navigation bar */ 
 #top-header {
 	background: #F8EFEA; 
@@ -170,4 +171,40 @@ h2 {
 		text-align: center;
 	}
 }
+
+/* Getting the grids right */ 
+.large-container {
+	width: 85%;
+	margin: 60px auto; 
+}
+
+.portfolio-container {
+	overflow: auto;
+}
+
+.card-container {
+	width: 100%; 
+	height: 100%;
+	border-radius: 0px;
+	margin-bottom: 20px;
+}
+
+.card-container img {
+	width: 100%; 
+	height: auto;
+}
+
+.zoom-effect img {
+	display: block; 
+	width: 100%; 
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.zoom-effect:hover img {
+	transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+}
+
 
