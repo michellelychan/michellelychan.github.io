@@ -10,10 +10,10 @@ a {
 
 h4 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-	font-weight: 400;
-	font-size: 19px;
-	color: #000000;
-	line-height: 30px;
+	font-weight: 700;
+	font-size: 25px;
+	color: #676767;
+	line-height: 0px;
 }
 
 h2 {
@@ -22,8 +22,21 @@ h2 {
 	font-size: 40px;
 	color: #4A4A4A;
 	line-height: 50px;
+	text-align: center;
 }
 
+hr {
+	width: 100%;
+	border-style: none;
+}
+
+p {
+	font-family: 'PT Serif';
+	font-weight: 400;
+	font-size: 19px;
+	color: #000000;
+	line-height: 30px;
+}
 
 /* the overall top navigation bar */ 
 #top-header {
@@ -260,3 +273,41 @@ h2 {
 	background-color: #6BDAE1;
 	color: #FFFFFF;
 }
+
+.large-container img {
+	box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.constrained-image {
+	margin: 0 auto 60px auto;
+	display: block;
+	max-width: 800px;
+}
+
+section {
+	display: block;
+	text-align: center;
+	margin: 80px auto 30px auto; 
+}
+
+.center-case {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+section p {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#form-constraint {
+	max-width: 84%;
+}
+
