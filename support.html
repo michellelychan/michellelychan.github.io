@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-		<div id="top-header" class = "fixed-position"> 
+		<div id="portfolio-top-header" class = "fixed-position"> 
 			<nav>
 				<div id="menu-toggle">
 					<a href="">Menu</a>
@@ -59,22 +59,17 @@
 			</nav> 
 		</div>
 
-		<div class="title-banner">
-			<div class="background-lg-text">Michelle</div>
-			<div class="background-lg-text">Chan</div>
-			<div class="tagline-box">
-				<div class="tagline">Self-taught</div>
-				<div class="tagline">designer,</div>
-				<div class="tagline">photographer,</div>
-				<div class="tagline">entrepreneur</div>
-			</div> 
+		<div class="portfolio-banner" id="support">
+			<div class="portfolio-title" >Runscope</div>
+			<div class="portfolio-title" >Support Page</div>
+			<div class="portfolio-subtitle" >Increasing Call to Action to register on Runscope by 40%</div>
 		</div> 
 
 		<div class="large-container">
 			<div class="portfolio-container"> 
 				<div class="row">
 					<div class="card-container zoom-effect col span_2">
-						<a href="/support.html">
+						<a href="">
 							<img alt="Runscope Support" class="" src="../static/img/runscope_support_card.jpg">
 						</a>
 					</div>
@@ -113,7 +108,7 @@
 			$("#menu-toggle").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
-				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$("#portfolio-top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
 			});
 		</script>
 	</body>

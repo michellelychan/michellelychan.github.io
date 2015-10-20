@@ -174,7 +174,7 @@ h2 {
 
 /* Getting the grids right */ 
 .large-container {
-	width: 85%;
+	width: 90%;
 	margin: 60px auto; 
 }
 
@@ -207,4 +207,56 @@ h2 {
 	-ms-transform: scale(1.02);
 }
 
+/* Portfolio Description Pages */ 
+#portfolio-top-header {
+	background: #FFFFFF; 
+    padding: 6px 0 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    box-shadow: 0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.25);
+}
 
+
+#portfolio-top-header nav ul li a, #portfolio-top-header nav ul li, #menu-toggle a {
+	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #9B9B9B;
+	line-height: 23px;
+	text-transform: uppercase;
+	text-decoration: none; 
+	list-style: none;
+	position: relative;
+}
+
+.portfolio-banner {
+	position: relative; 
+	padding: 8rem 4rem 4rem 4rem;
+	max-height: 50%;
+}
+
+.portfolio-title {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 110px;
+	line-height: 1em;
+	text-align: left;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.portfolio-subtitle {
+	font-family: PlayfairDisplay-Regular, Georgia, Times, serif;
+	font-size: 40px;
+	color: #3B3B3B;
+	line-height: 2.3em;
+	text-align: left;
+	position: relative;
+}
+
+#support {
+	background-color: #6BDAE1;
+	color: #FFFFFF;
+}
