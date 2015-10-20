@@ -87,7 +87,7 @@
 			<section class="center-case">
 				<h2>THE OLD SUPPORT PAGE</h2>
 				<img alt="Old Support Page" class="constrained-image" src="../static/img/old_support_page.png">
-				<p>The old Hurl.it page has a Runscope banner but the conversion rates from the Hurl.it site to Runscope was only 16%. The banner was not able to clearly explain how Runscope works and was not convincing enough on how Hurl.it users would find Runscope useful. </p>
+				<p>The old support page consisted of only a button to contact support and a GIF file that demonstrates how users could share their API tests to the support team via a URL share link. </p>
 			</section>
 
 			<section class="center-case">
@@ -165,9 +165,15 @@
 				}
 							
 			});
-
 		</script>
 
+		<script type="text/javascript">
+			$("#menu-toggle").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
 
 	</body>
 

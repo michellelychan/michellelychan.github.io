@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work in progress</title>
+
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<div id="menu-toggle">
+					<a href="">Menu</a>
+					<ul>
+						<li>
+							<a href="">Resume</a>
+						</li>	
+						<li>
+							<a href="">Graphic Design</a>
+						</li>
+						<li>
+							<a href="">Projects</a>
+						</li>	
+						<li>
+							<a href="">Photography</a>
+						</li>	
+						<li>
+							<a href="">Articles</a>
+						</li>	
+					</ul>
+				</div>
+
+				<ul id="menu-normal">
+					<li>
+						<a href="">Resume</a>
+					</li>
+					<li>
+						<a href="">Graphic Design</a>
+					</li>
+					<li>
+						<a href="">Projects</a>
+					</li>
+					<li>
+						<a href="">Photography</a>
+					</li>
+					<li>
+						<a href="">Articles</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+
+		<div class="portfolio-banner" id="support">
+			<div class="portfolio-title" >Runscope</div>
+			<div class="portfolio-title" >Mission Control</div>
+			<div class="portfolio-subtitle" >Reorganizing components within Runscope’s internal product</div>
+		</div> 
+
+		<div class="large-container">
+			<img alt="Runscope Support Header" src="../static/img/mission_control_banner.jpg">
+			
+			<div class="row">
+				
+				<div class="col span_4">
+					<h4>THE TASK</h4>
+					<a>During the internship, I spent 3 weeks redesigning Runscope’s internal platform, which consists of Runscope’s internal information (traffic, Keen graphs, test runs, financial stats, customer accounts) and internal tools (tests, flags, slack integrations etc). In order to protect the privacy of Runscope, I printscreened the mission control designs that I coded and used Sketch to cover up the data and sensitive information.  </a>
+				</div>
+
+				<div class="col span_2">
+					<h4>ABOUT RUNSCOPE</h4>
+					<a>Runscope provides a suite of API monitoring and testing tools that help developers build better apps and better businesses. </a>
+				</div>
+
+			</div>
+
+			<hr> 
+
+			<section class="center-case">
+				<h2>THE OLD MISSION CONTROL</h2>
+				<img alt="Old Support Page" class="constrained-image" src="../static/img/old_mission_control.png">
+				<p>The old mission control was bootstrapped a long time ago by our developers.  Althouth it includes all the data and functions, there is a lot of wasted space. The hierarchy of different components makes the overall workflow less smooth than it could be. </p>
+			</section>
+
+			<section class="center-case">
+				<h2>THE DESIGN PROCESS</h2>
+
+				<p>In order to understand how people at Runscope use our Mission Control, I interviewed 2/3 of the staff in our company, half through one-on-one talks and half through Slack. I understood more about their daily workflows and the components in the platform that help them accomplish their tasks.  From the interview, I learned that people use Mission Control in 2 major ways: </p>
+
+				<h4>1. ENGINEERING TEAM</h4>
+				<p>The major function that engineers use is the search bar at the top right-hand corner. Usually, they have to search for customer account information to identify and solve problems encountered different API requests and tests. They seldom use the “what are you working on” section because it is integrated to Slack. Other components that they use are the traffic summary and the leaderboard. </p>
+
+				<h4>2. COMMUNICATIONS & SUPPORT TEAM</h4>
+				<p>People in the communications & support often report their work in the “what you’re working on!”. The support team also uses the Quick Links (Shared URL Lookup & Docs) to solve customer support tickets. </p>
+
+				<p>I also asked our CEO, John Sheehan, about what he envisions in the new dashboard page and what types of information he hopes to deliver to his team on the homepage of Mission Control. Like any internal company dashboard, it is important to display more relevant, motivating statistics to the team, such as the number of users and test runs. For the old Mission Control, there were only statistics for yearly goals and Traffic Summary. Yearly goals are less motivating because they increment pretty slowly. </p>
+			</section>
+
+			<section class="center-case">
+				<h2>EARLY SKETCHES</h2>
+
+				<p>I made a few sketches on paper, experimenting with the position and hierarchy of different components to cater the needs of engineers, communications, and support team. I also researched on the types of Keen graphs that would be helpful to be displayed on the homepage Mission Control. </p>
+			</section>
+
+			<section class="row">
+				<h2>FIRST PROTOTYPE</h2>
+				<img alt="Early Wireframes" class="constrained-image" src="../static/img/mission_control_v1.png">
+
+				<div class="center-case">
+					<p>I did not make any high-fidelity prototypes on Sketch or Photoshop and immediately started coding the Mission Control Page because different components are already readily available on the original version. In this version, I made better use of space and made the following major changes: </p>
+
+					<h4>1. THE LEFT GREY COLUMN</h4>
+
+					<p>I placed the “What you’re working on”, “On Call Today”, “Quick Links” and “Environment Archives” in the left grey column. The support team can have access to Quick Links without scrolling down the page and the rest of the team can view who is on call easily when they first log into dashboard. These components may be used frequently, but may not deserve a prominent position in the middle of the dashboard. </p>
+
+					<h4>2. SEARCH</h4>
+
+					<p>I made the search function more prominent on the dashboard so that engineers can easily search within the site. </p>
+
+					<h4>3. KEEN GRAPHS & STATS</h4>
+					<p>I researched on the types of graphs available in the Report section of Runscope, and created new graphs that suit the needs of what the dashboard should show to the team. I also placed some available statistics (daily test runs and signups) on the page. </p>
+				</div>
+
+			</section>
+
+			<section class="center-case">
+				<h2>FEEDBACK FROM THE 1ST PROTOTYPE</h2>
+
+				<p>After finishing the first design, I asked for feedback from different members of the Rusncope team for suggestions and improvements. One important feedback that I got from the engineering team is that although the search bar is made more prominent in the Mission Control, its position is not consistent with other pages on the site where the search bar is still on the top left corner. Another feedback was that they like the Keen graphs that were brought up to the homepage, and they hope to be able to see more statistics and graphs, including daily and weekly test runs and signups. </p>
+			</section>
+
+			<section class="center-case">
+				<h2>FINAL DESIGN</h2>
+				<img alt="Old Support Page" class="constrained-image" src="../static/img/mission_control_final.png">
+				<p>I worked on improving the first prototype after collecting feedback from the team. The search bar is now placed on top (right below the grey bar) and it shows up on every page within Mission Control. I also created more Keen graphs for test runs and signups. I included the weekly graphs in the dashboard because compared with the daily charts, you can see the increasing trends more clearly. </p>
+			</section>
+
+		</div> 
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$("#menu-toggle").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
+
+
+	</body>
+
+</html>
