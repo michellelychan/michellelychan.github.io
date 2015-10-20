@@ -38,6 +38,10 @@ p {
 	line-height: 30px;
 }
 
+body {
+	background-color: #FCFBFA;
+}
+
 /* the overall top navigation bar */ 
 #top-header {
 	background: #F8EFEA; 
@@ -60,6 +64,7 @@ p {
 	list-style: none;
 	position: relative;
 }
+
 
 .fixed-position {
 	 position: fixed;
@@ -222,13 +227,11 @@ p {
 
 /* Portfolio Description Pages */ 
 #portfolio-top-header {
-	background: #FFFFFF; 
     padding: 6px 0 6px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 20;
-    box-shadow: 0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.25);
 }
 
 
@@ -236,13 +239,31 @@ p {
 	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
 	font-weight: 500;
 	font-size: 18px;
-	color: #9B9B9B;
 	line-height: 23px;
 	text-transform: uppercase;
 	text-decoration: none; 
 	list-style: none;
 	position: relative;
 }
+
+.static-nav {
+	transition: all 0.4s ease;
+}
+
+.static-nav nav ul li a, .static-nav nav ul li, #menu-toggle a{
+	color: #000000;
+}
+
+.scroll-nav {
+	background: #ffffff;
+	transition: all 0.4s ease;
+	box-shadow: 0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.25);
+}
+
+.scroll-nav, .scroll-nav nav ul li a, .scroll-nav nav ul li {
+	color: #000000;
+}
+
 
 .portfolio-banner {
 	position: relative; 
@@ -289,12 +310,13 @@ p {
 section {
 	display: block;
 	text-align: center;
-	margin: 80px auto 30px auto; 
+	margin: 120px auto 20px auto; 
 }
 
 .center-case {
 	max-width: 700px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 section p {

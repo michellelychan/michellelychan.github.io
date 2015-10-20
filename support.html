@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-		<div id="portfolio-top-header" class = "fixed-position"> 
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
 			<nav>
 				<div id="menu-toggle">
 					<a href="">Menu</a>
@@ -96,9 +96,6 @@
 				<p>I interviewed the support team and collected over 30 support page designs from different companies before I started to draw out anything on paper. One of the biggest issues that the support team faced was that many customers were asking similar questions that can usually be found in Runscope’s documentation, which greatly increased the workload of the team as they had to redirect customers back to the specific pages. </p>
 
 				<hr>
-
-
-
 			</section>
 
 			<section class="center-case">
@@ -160,11 +157,15 @@
 		</div> 
 
 		<script type="text/javascript">
-			$("#menu-toggle").click(function(e) {
-				$("#menu-toggle").children().toggleClass("nav-open");
-				e.preventDefault();
-				$("#portfolio-top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
 			});
+
 		</script>
 
 
