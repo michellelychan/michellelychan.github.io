@@ -228,7 +228,7 @@ body {
 	font-family: 'PT Serif', Georgia, Times, serif;
 	font-weight: 400;
 	font-size: 20px;
-	color: #BFB1B1;
+	color: #F9AEAA;
 	padding: 12px 0px;
 	list-style: none;
 	text-decoration: none;
@@ -323,6 +323,42 @@ section p {
 	position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+	.portfolio-title {
+		font-size: 70px;
+	}
+
+	.portfolio-subtitle {
+		font-size: 30px;
+	}
+ }
+
+@media screen and (max-width: 800px) {
+	.portfolio-title {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.portfolio-subtitle {
+		font-size: 20px;
+		text-align: center;
+		line-height: 28px;
+	}
+ }
+
+ @media (max-width: 420px) {
+	.portfolio-title {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.portfolio-subtitle {
+		font-size: 20px;
+		text-align: center;
+		line-height: 28px;
+	}
+ }
+
 	/* customizing portfolio-subtitle colors */ 
 	#kuky-world-color {
 		color: #FF4B00;
@@ -351,7 +387,7 @@ section p {
 	float: left;
 	margin: 20px 0; 
 	padding: 0px 0 40px 0;
-	color: #DEDEDE;
+	color: #5A5A5A;
 }
 
 .task-container {
@@ -364,6 +400,25 @@ section p {
 	width: 35%;
 	float: left;
 	margin: 0 3%;
+}
+
+@media (max-width: 960px) {
+	.task-container {
+		width: 100%; 
+		text-align: center;
+		float: none;
+	}
+
+	.about-container {
+		width: 100%; 
+		text-align: center;
+		float: none;
+	}
+
+	.task-container h4, .about-container h4 {
+		text-align: center;
+	}
+	
 }
 
 .center-case {
