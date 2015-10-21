@@ -8,6 +8,10 @@ a {
 	line-height: 30px;
 }
 
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 h4 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 700;
@@ -43,6 +47,7 @@ body {
 	background-color: #FCFBFA;
 }
 
+
 /* the overall top navigation bar */ 
 #top-header {
 	/* background: #F8EFEA; */
@@ -66,11 +71,10 @@ body {
 	position: relative;
 }
 
-
-
 .fixed-position {
 	 position: fixed;
 }
+
 
 
 /* The minimized toggle menu */ 
@@ -192,7 +196,7 @@ body {
 	}
 }
 
-/* Getting the grids right */ 
+/* Getting the cards and grids right */ 
 .large-container {
 	width: 90%;
 	margin: 60px auto; 
@@ -207,11 +211,29 @@ body {
 	height: 100%;
 	border-radius: 0px;
 	margin-bottom: 20px;
+	background-color: #ffffff;
+	text-decoration: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
+}
+
+.portfolio-container .card-container {
+	padding: 0;
 }
 
 .card-container img {
 	width: 100%; 
 	height: auto;
+}
+
+.card-subtitle {
+	font-family: 'PT Serif', Georgia, Times, serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+	padding: 12px 0px;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
 }
 
 .zoom-effect img {
@@ -228,6 +250,18 @@ body {
 }
 
 /* Portfolio Description Pages */ 
+section {
+	display: block;
+	text-align: center;
+	margin: 120px auto 20px auto; 
+}
+
+section p {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
 #portfolio-top-header {
     padding: 6px 0 6px;
     width: 100%;
@@ -235,7 +269,6 @@ body {
     left: 0;
     z-index: 20;
 }
-
 
 #portfolio-top-header nav ul li a, #portfolio-top-header nav ul li, #menu-toggle a {
 	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
@@ -266,7 +299,6 @@ body {
 	color: #000000;
 }
 
-
 .portfolio-banner {
 	position: relative; 
 	padding: 8rem 4rem 4rem 4rem;
@@ -292,33 +324,14 @@ body {
 	position: relative;
 }
 
-#support {
-	background-color: #6BDAE1;
-	color: #FFFFFF;
-}
-
 .large-container img {
-	box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
     width: 100%;
-    margin-bottom: 30px;
 }
 
 .constrained-image {
 	margin: 0 auto 60px auto;
 	display: block;
 	max-width: 800px;
-}
-
-section {
-	display: block;
-	text-align: center;
-	margin: 120px auto 20px auto; 
-}
-
-section p {
-	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 30px;
 }
 
 .center-case {
@@ -339,3 +352,7 @@ section p {
 	max-width: 84%;
 }
 
+#support {
+	background-color: #6BDAE1;
+	color: #FFFFFF;
+}
