@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-		<div id="top-header" class = "fixed-position"> 
+		<div id="top-header" class = "static-nav fixed-position"> 
 			<nav>
 				<div id="menu-toggle">
 					<a href="">Menu</a>
@@ -142,6 +142,17 @@
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
 				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
 			});
 		</script>
 	</body>
