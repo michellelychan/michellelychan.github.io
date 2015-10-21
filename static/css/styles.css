@@ -404,13 +404,13 @@ section p {
 
 @media (max-width: 960px) {
 	.task-container {
-		width: 100%; 
+		width: 90%; 
 		text-align: center;
 		float: none;
 	}
 
 	.about-container {
-		width: 100%; 
+		width: 90%; 
 		text-align: center;
 		float: none;
 	}
