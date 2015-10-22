@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work in progress</title>
+
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<div id="menu-toggle">
+					<a href="">Menu</a>
+					<ul>
+						<li>
+							<a href="">Resume</a>
+						</li>	
+						<li>
+							<a href="">Graphic Design</a>
+						</li>
+						<li>
+							<a href="">Projects</a>
+						</li>	
+						<li>
+							<a href="">Photography</a>
+						</li>	
+						<li>
+							<a href="">Articles</a>
+						</li>	
+					</ul>
+				</div>
+
+				<ul id="menu-normal">
+					<li>
+						<a href="">Resume</a>
+					</li>
+					<li>
+						<a href="">Graphic Design</a>
+					</li>
+					<li>
+						<a href="">Projects</a>
+					</li>
+					<li>
+						<a href="">Photography</a>
+					</li>
+					<li>
+						<a href="">Articles</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+
+		<div class="portfolio-banner">
+			<div class="portfolio-title" >Telp</div>
+			<div class="portfolio-title" >Website Design</div>
+			<div class="portfolio-subtitle" id="telp-color">On-demand tech support service</div>
+		</div> 
+
+		<div class="large-container">
+			<img alt="Telp Web Design" src="../static/img/telp_banner.jpg">
+			
+			<div class="project-description-container">
+				
+				<div class="task-container">
+					<h4>THE TASK</h4>
+					<a>I worked on the branding for Tuckerman & Co, including the design of the packaging, clothing labels, namecards, thank you cards, and different components of the Website. This is one of the projects that I worked for as a design assistant for Yale School of Management's Program in Entrepreneurship.</a>
+				</div>
+
+				<div class="about-container">
+					<h4>ABOUT THE COMPANY</h4>
+					<a>Started out as a Kickstarter Project (featured in "Staff Picks") and a venture in the Yale School of Management, Tuckerman & Co. aims to change the way clothes are made and worn. Tuckerman & Co aims to create sustainably-made organic clothing for young professionals without sacrificing quality or style. The website: <b><a href="www.tuckerman.co">www.tuckerman.co</a></b>.</a>
+				</div>
+			</div>
+
+			<hr> 
+			<section>
+				<div class="center-case">
+					<h2 class="text-center">Web Design</h2> 
+					<img alt="Telp Marketing Page Design" class="constrained-image" src="../static/img/telp_marketing_page.jpg">
+					<img alt="Telp Helper Selection Page" class="constrained-image" src="../static/img/telp_selection.png">
+					<img alt="Telp Job Information Page" class="constrained-image" src="../static/img/telp_job_info.jpg">
+					<img alt="Telp Thank You Page" class="constrained-image" src="../static/img/telp_thanks.jpg">
+					<img alt="Telp Form" class="constrained-image" src="../static/img/telp_thanks.jpg">
+				</div>
+
+			</section>	
+			
+		</div> 
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$("#menu-toggle").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
+
+
+	</body>
+
+</html>
