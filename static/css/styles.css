@@ -30,6 +30,7 @@ h2 {
 	color: #000000;
 	line-height: 50px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 hr {
@@ -379,6 +380,10 @@ section p {
 
 	#zara-color {
 		color: #FF8580;
+	}
+
+	#tuckerman-color {
+		color: #5fd504;
 	}
 
 
