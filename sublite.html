@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work in progress</title>
+
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<div id="menu-toggle">
+					<a href="">Menu</a>
+					<ul>
+						<li>
+							<a href="">Resume</a>
+						</li>	
+						<li>
+							<a href="">Graphic Design</a>
+						</li>
+						<li>
+							<a href="">Projects</a>
+						</li>	
+						<li>
+							<a href="">Photography</a>
+						</li>	
+						<li>
+							<a href="">Articles</a>
+						</li>	
+					</ul>
+				</div>
+
+				<ul id="menu-normal">
+					<li>
+						<a href="">Resume</a>
+					</li>
+					<li>
+						<a href="">Graphic Design</a>
+					</li>
+					<li>
+						<a href="">Projects</a>
+					</li>
+					<li>
+						<a href="">Photography</a>
+					</li>
+					<li>
+						<a href="">Articles</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+
+		<div class="portfolio-banner">
+			<div class="portfolio-title" >Sublite</div>
+			<div class="portfolio-title" >Website Design</div>
+			<div class="portfolio-subtitle" id="support-color">Redesigning the Student Internship & Housing Search Experience</div>
+		</div> 
+
+		<div class="large-container">
+			<img alt="SubLite Web Design" src="../static/img/sublite_banner.jpg">
+			
+			<div class="project-description-container">
+				
+				<div class="task-container">
+					<h4>THE TASK</h4>
+					<a>I joined the Sublite team at Yale as a web designer in October 2014. This past year, I designed the marketing page, the internship platform of the website as well as the housing platform. I am currently revamping the internship platform of the website, such as the application process for students and the applicant search platform for recruiters.</a>
+				</div>
+
+				<div class="about-container">
+					<h4>ABOUT SUBLITE</h4>
+					<a>Backed by the Yale Venture Creation Program and the Wharton Innovation Fund, SubLite is an exclusive student-to-student online platform to find safe housing for internships. SubLite launched its Beta housing platform this summer, which attracted over 8,500 users from 500 universities. The majority of our current users are students from Yale, Harvard, UPenn, Princeton, Stanford, Columbia and NYU. It is now on <a href="www.sublite.net">www.sublite.net</a>.</a>
+				</div>
+			</div>
+
+			<hr> 
+
+			<section class="row">
+				<h2>THE WEBSITE</h2>
+				
+				<h4 class="text-center">THE OLD BANNER TITLE</h4>
+				<img alt="Old Banner Title" src="../static/img/old_hurl_it_title.png">
+
+				<h4 class="text-center">THE NEW BANNER TITLE</h4>
+				<img alt="New Banner Title" src="../static/img/new_hurl_it_title.png">
+
+				<h4 class="text-center">THE OLD BANNER CONTENT</h4>
+				<img alt="Old Banner Content" src="../static/img/old_hurl_it_content.png">
+
+				<h4 class="text-center">THE NEW BANNER CONTENT</h4>
+				<img alt="New Banner Content" src="../static/img/new_hurl_it_content.png">
+
+				<div class="center-case">
+					<p>Although Runscope provides other tools such as Runscope Radar and Runscope Traffic Inspector, these may be irrelevant to Hurl.it users who only want to make HTTP requests. Therefore, I focused more on the ability of Hurl.it users to organize and share their HTTP requests in the content. </p>
+				</div>
+
+			<section class="row">
+				<h2>THE NEW DESIGN #1</h2>
+				<img alt="New Hurl.it Design"  class="constrained-image" src="../static/img/hurl_it_design_new1.png">
+				<div class="center-case">
+					<p>I made a few sketches on paper, experimenting with the position and hierarchy of different components to cater the needs of engineers, communications, and support team. I also researched on the types of Keen graphs that would be helpful to be displayed on the homepage Mission Control. </p>
+
+					<h4>RESULTS OF THE 1ST DESIGN</h4>
+					<p>After shipping the new design, there percentage of people clicking the Call to Action increased from an average of 16% to 59% within the week. However, the number of people who actually register after visiting Runscope’s homepage is only 24%. </p>
+
+					<p>I then added an email input next to the Call to Action button so that Hurl.it users can register on Runscope directly. </p>
+				</div>
+			</section>
+			
+			<section class="row">
+				<h2>THE FINAL DESIGN</h2>
+				<img alt="Final Hurl.it Design" src="../static/img/hurl_it_design_new2.png">
+				<div class="center-case">
+					<h4>RESULTS OF THE FINAL DESIGN</h4>
+					<p>Although the number of people clicking the orange button decreased from 59% to 46%, all the numbers converted to actual registrations on Runscope. Users are able to use the Runscope platform right after clicking the button and Runscope is able to collect email addresses of the Hurl.it users for promotion in the future. </p>
+				</div>
+			</section>
+
+		</div> 
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$("#menu-toggle").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
+
+
+	</body>
+
+</html>
