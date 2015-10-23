@@ -465,7 +465,9 @@ section p {
 
 .resume-container {
 	width: 85%;
-	margin: 60px auto; 
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 250px;
 }
 
 .resume-section-divider {
