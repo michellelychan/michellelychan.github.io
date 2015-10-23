@@ -54,7 +54,7 @@ body {
 /* the overall top navigation bar */ 
 #top-header {
 	/* background: #F8EFEA; */
-    padding: 8px 0 8px;
+    padding: 6px 0 6px;
     width: 100%;
     top: 0;
     left: 0;
@@ -63,11 +63,11 @@ body {
 
 
 #top-header nav ul li a, #top-header nav ul li, #menu-toggle a {
-	color: #979797;
 	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 25px;
+	font-size: 18px;
+	color: #979797;
+	line-height: 23px;
 	text-transform: uppercase;
 	text-decoration: none; 
 	list-style: none;
