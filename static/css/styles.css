@@ -496,9 +496,9 @@ section p {
 
 .resume-description p {
 	font-family: 'Lato', 'Helvetica', sans-serif;
-	font-size: 17px; 
-	font-weight: 300; 
-	font-style: normal;
+	font-size: 17px;
+	font-weight: 300;
+	font-style: normal; 
 	line-height: 1.6em;
 	margin-bottom: 30px;
 }
@@ -506,6 +506,71 @@ section p {
 strong {
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+/* customizing portfolio-subtitle colors */ 
+.photography-large-container {
+	width: 100%;
+	margin: 70px auto; 
+}
+
+.photography-card-container {
+	display: inline-block;
+	width:49.5%;
+	margin: 0%;
+}
+
+@media (max-width: 768px) {
+	.photography-card-container {
+		display: block;
+		width:100%;
+	}
+}
+
+.photography-card {
+	position: relative; 
+	width: 100%;
+}
+
+.photography-card img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.photography-card-subtitle {
+	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: #ffffff;
+    position: absolute;
+    top: 42%;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+}
+
+.filter {
+	filter: none;
+	-webkit-filter: none;
+	transition: all 0.2s ease;
+}
+
+/* .filter:hover, photography-card-subtitle:hover, photography-card-subtitle:active {
+	filter: brightness(60%);
+	-webkit-filter: brightness(60%);
+	-moz-filter: brightness(60%);
+	-o-filter: brightness(60%);
+	-ms-filter: brightness(60%);
+    transition: all 0.4s ease;
+} */
+
+.darken {
+	filter: brightness(60%);
+	-webkit-filter: brightness(60%);
+	-moz-filter: brightness(60%);
+	-o-filter: brightness(60%);
+	-ms-filter: brightness(60%);
+    transition: all 0.4s ease;
 }
 
 
