@@ -573,5 +573,29 @@ strong {
     transition: all 0.4s ease;
 }
 
+#photo-grid {
+
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+#photo-grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	#photo-grid {
+		-webkit-column-count: 1;
+    	-moz-column-count: 1;
+    	column-count: 1;
+	}
+}
 
 
