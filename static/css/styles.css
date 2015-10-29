@@ -598,4 +598,30 @@ strong {
 	}
 }
 
+/* graphic design page */ 
+#graphic-design-grid {
+
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+}
+
+#graphic-design-grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	#graphic-design-grid {
+		-webkit-column-count: 1;
+    	-moz-column-count: 1;
+    	column-count: 1;
+	}
+}
+
 

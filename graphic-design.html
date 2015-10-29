@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work in progress</title>
+
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="photography-large-container">
+			<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+				<nav>
+					<div id="menu-toggle">
+						<a href="">Menu</a>
+						<ul>
+							<li>
+								<a href="/michelle-chan-design-resume.html">Resume</a>
+							</li>	
+							<li>
+								<a href="">Graphic Design</a>
+							</li>
+							<li>
+								<a href="">Projects</a>
+							</li>	
+							<li>
+								<a href="/photography.html">Photography</a>
+							</li>	
+	
+						</ul>
+					</div>
+
+					<ul id="menu-normal">
+						<li>
+							<a href="/michelle-chan-design-resume.html">Resume</a>
+						</li>
+						<li>
+							<a href="">Graphic Design</a>
+						</li>
+						<li>
+							<a href="">Projects</a>
+						</li>
+						<li>
+							<a href="/photography.html">Photography</a>
+						</li>
+					</ul>
+				</nav> 
+			</div>
+
+
+
+		<div id="graphic-design-grid">
+			<img alt="Graphic Design" class="filter" src="../static/img/photography/japan-kagoshima/japan_1.jpg">
+		</div>	
+						
+
+		</div>
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$("#menu-toggle").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(".photography-card").mouseenter(function(e) {
+				console.log("this happened");
+				$(this).find("img").addClass("darken");
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(".photography-card").mouseleave(function(e) {
+				console.log("this happened");
+				$(this).find("img").removeClass("darken");
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+	</body>
+
+</html>
