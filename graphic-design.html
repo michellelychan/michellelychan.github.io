@@ -57,7 +57,19 @@
 
 
 		<div id="graphic-design-grid">
-			<img alt="Graphic Design" class="filter" src="../static/img/photography/japan-kagoshima/japan_1.jpg">
+			<div class="graphic-design-card">
+				<img alt="Graphic Design" class="filter" src="../static/img/graphic-design/YEM_tuckerman.jpg">
+				<div class="graphic-design-card-subtitle">Yale Entrepreneur Magazine</div>
+			</div>
+			<div class="graphic-design-card">
+				<img alt="Graphic Design" class="filter" src="../static/img/graphic-design/YEM_hackathon.jpg">
+				<div class="graphic-design-card-subtitle">Yale Entrepreneur Magazine</div>
+			</div>
+			<div class="graphic-design-card">
+				<img alt="Graphic Design" class="filter" src="../static/img/graphic-design/zara_page_1.jpg">
+				<div class="graphic-design-card-subtitle">Yale Entrepreneur Magazine</div>
+			</div>
+			
 		</div>	
 						
 
@@ -82,19 +94,6 @@
 			});
 		</script>
 
-		<script type="text/javascript">
-			$(".photography-card").mouseenter(function(e) {
-				console.log("this happened");
-				$(this).find("img").addClass("darken");
-			});
-		</script>
-
-		<script type="text/javascript">
-			$(".photography-card").mouseleave(function(e) {
-				console.log("this happened");
-				$(this).find("img").removeClass("darken");
-			});
-		</script>
 
 		<script type="text/javascript">
 			$(window).scroll(function(e) {
@@ -107,16 +106,7 @@
 			});
 		</script>
 
-		<script type="text/javascript">
-			$(window).scroll(function(e) {
-				if ($(this).scrollTop() > 1) {
-					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
-				}	else {
-					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
-				}
-							
-			});
-		</script>
+		
 
 	</body>
 

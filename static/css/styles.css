@@ -602,18 +602,17 @@ strong {
 #graphic-design-grid {
 
     line-height: 0;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
-    -moz-column-count: 3;
-    -moz-column-gap: 10px;
-    column-count: 3;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
     column-gap: 10px;
 }
 
-#graphic-design-grid img {
+#graphic-design-grid img, .graphic-design-card img  {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -624,4 +623,23 @@ strong {
 	}
 }
 
+.graphic-design-card {
+	position: relative;
+	margin: 0; 
+	padding: 0;
+	width: 100%;
+}
+
+
+.graphic-design-card-subtitle {
+	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+    position: absolute;
+    top: 42%;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+}
 
