@@ -15,45 +15,45 @@
 	</head>
 
 	<body>
-		<div class="photography-large-container">
-			<div id="portfolio-top-header" class ="static-nav fixed-position"> 
-				<nav>
-					<div id="menu-toggle">
-						<a href="">Menu</a>
-						<ul>
-							<li>
-								<a href="/michelle-chan-design-resume.html">Resume</a>
-							</li>	
-							<li>
-								<a href="/graphic-design.html">Graphic Design</a>
-							</li>
-							<li>
-								<a href="/projects.html">Projects</a>
-							</li>	
-							<li>
-								<a href="/photography.html">Photography</a>
-							</li>	
-	
-						</ul>
-					</div>
-
-					<ul id="menu-normal">
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<div id="menu-toggle">
+					<a href="">Menu</a>
+					<ul>
 						<li>
 							<a href="/michelle-chan-design-resume.html">Resume</a>
-						</li>
+						</li>	
 						<li>
 							<a href="/graphic-design.html">Graphic Design</a>
 						</li>
 						<li>
 							<a href="/projects.html">Projects</a>
-						</li>
+						</li>	
 						<li>
 							<a href="/photography.html">Photography</a>
-						</li>
-					</ul>
-				</nav> 
-			</div>
+						</li>	
 
+					</ul>
+				</div>
+
+				<ul id="menu-normal">
+					<li>
+						<a href="/michelle-chan-design-resume.html">Resume</a>
+					</li>
+					<li>
+						<a href="/graphic-design.html">Graphic Design</a>
+					</li>
+					<li>
+						<a href="/projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="/photography.html">Photography</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+
+		<div class="photography-large-container">
 			<div class="photography-card-container">
 				<div class="photography-card">
 					<a href="/photography-abstract.html">
@@ -124,7 +124,8 @@
 			$("#menu-toggle").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
-				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$("#portfolio-top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$(".photography-large-container").toggleClass("margin-top-0");
 			});
 		</script>
 
