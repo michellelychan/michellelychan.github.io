@@ -15,62 +15,58 @@
 	</head>
 
 	<body>
-		<div class="photography-large-container">
-			<div id="portfolio-top-header" class ="static-nav fixed-position"> 
-				<nav>
-					<div id="menu-toggle">
-						<a href="">Menu</a>
-						<ul>
-							<li>
-								<a href="/michelle-chan-design-resume.html">Resume</a>
-							</li>	
-							<li>
-								<a href="/graphic-design.html">Graphic Design</a>
-							</li>
-							<li>
-								<a href="/projects.html">Projects</a>
-							</li>	
-							<li>
-								<a href="/photography.html">Photography</a>
-							</li>	
-	
-						</ul>
-					</div>
-
-					<ul id="menu-normal">
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<div id="menu-toggle">
+					<a href="">Menu</a>
+					<ul>
 						<li>
 							<a href="/michelle-chan-design-resume.html">Resume</a>
-						</li>
+						</li>	
 						<li>
 							<a href="/graphic-design.html">Graphic Design</a>
 						</li>
 						<li>
 							<a href="/projects.html">Projects</a>
-						</li>
+						</li>	
 						<li>
 							<a href="/photography.html">Photography</a>
-						</li>
+						</li>	
+
 					</ul>
-				</nav> 
-			</div>
+				</div>
 
+				<ul id="menu-normal">
+					<li>
+						<a href="/michelle-chan-design-resume.html">Resume</a>
+					</li>
+					<li>
+						<a href="/graphic-design.html">Graphic Design</a>
+					</li>
+					<li>
+						<a href="/projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="/photography.html">Photography</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
 
-
-		<div id="photo-grid">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_2.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_1.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_8.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_3.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_5.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_4.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_7.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_6.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_9.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_10.jpg">
-			<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_11.jpg">
-		</div>	
-						
-
+		<div class="photography-large-container">
+			<div id="photo-grid">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_2.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_1.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_8.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_3.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_5.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_4.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_7.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_6.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_9.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_10.jpg">
+				<img alt="Abstract" class="filter" src="../static/img/photography/abstract/abstract_11.jpg">
+			</div>	
 		</div>
 
 		<script type="text/javascript">
@@ -88,20 +84,19 @@
 			$("#menu-toggle").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
-				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$("#portfolio-top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$(".photography-large-container").toggleClass("margin-top-0");
 			});
 		</script>
 
 		<script type="text/javascript">
 			$(".photography-card").mouseenter(function(e) {
-				console.log("this happened");
 				$(this).find("img").addClass("darken");
 			});
 		</script>
 
 		<script type="text/javascript">
 			$(".photography-card").mouseleave(function(e) {
-				console.log("this happened");
 				$(this).find("img").removeClass("darken");
 			});
 		</script>
@@ -116,18 +111,6 @@
 							
 			});
 		</script>
-
-		<script type="text/javascript">
-			$(window).scroll(function(e) {
-				if ($(this).scrollTop() > 1) {
-					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
-				}	else {
-					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
-				}
-							
-			});
-		</script>
-
 	</body>
 
 </html>
