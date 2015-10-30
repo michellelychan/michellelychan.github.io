@@ -19,10 +19,10 @@
 		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
 			<nav>
 				<div id="menu-toggle">
-					<a href="/michelle-chan-design-resume.html">Menu</a>
+					<a class="menu" href="">Menu</a>
 					<ul>
 						<li>
-							<a href="">Resume</a>
+							<a href="/michelle-chan-design-resume.html">Resume</a>
 						</li>	
 						<li>
 							<a href="/graphic-design.html">Graphic Design</a>
@@ -102,7 +102,7 @@
 		</script>
 
 		<script type="text/javascript">
-			$("#menu-toggle").click(function(e) {
+			$(".menu").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
 				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
