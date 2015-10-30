@@ -115,7 +115,8 @@
 			$(".menu").click(function(e) {
 				$("#menu-toggle").children().toggleClass("nav-open");
 				e.preventDefault();
-				$("#top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
+				$("#portfolio-top-header").toggleClass("slide-down").toggleClass("fixed-position");
+				$(".portfolio-banner").toggleClass("portfolio-banner-small-padding");
 			});
 		</script>
 
