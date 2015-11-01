@@ -606,14 +606,14 @@ strong {
 	}
 }
 
-/* graphic design page v2 */ 
-.graphic-design-large-container {
+/* graphic design page and photogrpahy */ 
+.full-width-container {
 	width:100%;
 	margin: 70px auto; 
 	padding: 0; 
 }
 
-.graphic-design-column {
+.full-width-column {
 	margin: 0;
 	padding: 0; 
 	float: left;
@@ -622,12 +622,12 @@ strong {
 }
 
 @media (max-width: 768px) {
-	.graphic-design-column {
+	.full-width-column {
 		width:100%;
 	}
 }
 
-.graphic-design-column img {
+.full-width-column img {
 	width: 100%;
     height: auto;
     margin: 0;
