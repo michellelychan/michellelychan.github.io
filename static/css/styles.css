@@ -606,29 +606,35 @@ strong {
 	}
 }
 
-/* graphic design page */ 
-#graphic-design-grid {
-
-    line-height: 0;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 2;
-    -moz-column-gap: 0px;
-    column-count: 2;
-    column-gap: 10px;
+/* graphic design page v2 */ 
+.graphic-design-large-container {
+	width:100%;
+	margin: 70px auto; 
+	padding: 0; 
 }
 
-#graphic-design-grid img, .graphic-design-card img  {
-    width: 100%;
-    height: auto;
+.graphic-design-column {
+	margin: 0;
+	padding: 0; 
+	float: left;
+	display: block;
+	width:50%;
 }
 
 @media (max-width: 768px) {
-	#graphic-design-grid {
-		-webkit-column-count: 1;
-    	-moz-column-count: 1;
-    	column-count: 1;
+	.graphic-design-column {
+		width:100%;
 	}
 }
+
+.graphic-design-column img {
+	width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+
 
 
