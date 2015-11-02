@@ -464,6 +464,10 @@ section p {
 	max-width: 84%;
 }
 
+.margin-top-bottom-10 {
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
 
 /* resume section */ 
 
