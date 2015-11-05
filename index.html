@@ -158,8 +158,10 @@
 			$(window).scroll(function(e) {
 				if ($(this).scrollTop() > 1) {
 					$("#top-header").removeClass("static-nav").addClass("scroll-nav");
+					$("#menu-toggle").removeClass("static-nav").addClass("scroll-nav");
 				}	else {
 					$("#top-header").removeClass("scroll-nav").addClass("static-nav");
+					$("#menu-toggle").removeClass("scroll-nav").addClass("static-nav");
 				}
 							
 			});
