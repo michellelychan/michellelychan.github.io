@@ -95,7 +95,6 @@ body {
 }
 
 #menu-toggle ul {
-	position: fixed;
 	display: none;
 	list-style: none; 
 	padding: 0;
