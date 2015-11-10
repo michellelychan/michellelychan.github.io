@@ -125,9 +125,17 @@ body {
 	margin-right: 40px;
 }
 
+.icon, .icon img {
+	float: left;
+	width: 45px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
 
 @media (max-width: 768px) {
-	#menu-normal {
+	#menu-normal, .icon, .icon img{
 	    display: none;
 	}	
 }
