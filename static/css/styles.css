@@ -155,7 +155,7 @@ body {
 	font-weight: 700;
 	font-size: 202px;
 	font-size: 14vw; 
-	color: #FFCCC9;
+	color: #ffdedc;
 	line-height: 1em;
 	text-align: right;
 	text-transform: uppercase;
@@ -166,12 +166,18 @@ body {
 	font-family: 'Playfair Display', 'Georgia', serif;
 	font-weight: 500;
 	font-size: 60px;
-	font-size: 4.5vw;
+	font-size: 3.8vw;
 	color: #000000;
 	line-height: 85px;
 	line-height: 1.5em;
+	position: absolute;
+	top: 100px;
+	max-width: 90%;
 }
 
+.tagline > em {
+	font-weight: bold;
+}
 
 
 .tagline-box {
@@ -187,13 +193,34 @@ body {
 	top: 120px;
 }
 
+.tagline > a {
+	text-decoration: underline;
+    color: #0e9ac7;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+@media (min-width: 1800px) {
+	.tagline {
+		position: relative;
+		padding: 1em;
+	}
+	.background-lg-text {
+		display: none;
+	}
+	.title-banner {
+		padding: 3rem 4rem 10rem 4rem;
+	}
+}
+
 @media (max-width: 768px) {
 	.tagline {
 	    font-size: 35px;
-	    line-height: 52px;
+	    line-height: 45px;
+	    text-align: center;
 	}	
 	.title-banner {
-		padding:100px 20px 400px 20px;
+		padding:100px 20px 270px 20px;
 	}
 	.tagline-box {
 		width: 230px;
@@ -201,7 +228,18 @@ body {
 	}
 }
 
-@media (max-width: 460px) {
+@media (max-width: 650px) {
+	.tagline {
+		font-size: 28px; 
+		text-align: center;
+	}
+}
+
+@media (max-width: 560px) {
+	.tagline {
+		font-size: 24px;
+		line-height: 35px;
+	}
 	.background-lg-text {
 		text-align: center;
 	}
