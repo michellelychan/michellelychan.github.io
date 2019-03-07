@@ -163,7 +163,7 @@ body {
 }
 
 .tagline {
-	font-family: 'Playfair Display', 'Georgia', serif;
+	font-family: 'Georgia', "Times", "Times New Roman", serif;
 	font-weight: 500;
 	font-size: 60px;
 	font-size: 3.8vw;
@@ -204,6 +204,7 @@ body {
 	.tagline {
 		position: relative;
 		padding: 1em;
+
 	}
 	.background-lg-text {
 		display: none;
