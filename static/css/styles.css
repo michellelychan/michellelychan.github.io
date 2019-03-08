@@ -166,13 +166,13 @@ body {
 	font-family: 'Georgia', "Times", "Times New Roman", serif;
 	font-weight: 500;
 	font-size: 60px;
-	font-size: 3.8vw;
+	font-size: 3.1vw;
 	color: #000000;
 	line-height: 85px;
 	line-height: 1.5em;
 	position: absolute;
 	top: 100px;
-	max-width: 90%;
+	max-width: 70%;
 }
 
 .tagline > em {
@@ -202,13 +202,13 @@ body {
 
 @media (min-width: 1800px) {
 	.tagline {
-		position: relative;
-		padding: 1em;
-
+		padding-left: 5%;
+    	font-size: 2.8vw;
+    	padding-top: 80px;
 	}
-	.background-lg-text {
+	/*.background-lg-text {
 		display: none;
-	}
+	}*/
 	.title-banner {
 		padding: 3rem 4rem 10rem 4rem;
 	}
@@ -219,9 +219,10 @@ body {
 	    font-size: 35px;
 	    line-height: 45px;
 	    text-align: center;
+	    max-width: 90%;
 	}	
 	.title-banner {
-		padding:100px 20px 270px 20px;
+		padding:100px 20px 20em 20px;
 	}
 	.tagline-box {
 		width: 230px;
@@ -244,6 +245,13 @@ body {
 	.background-lg-text {
 		text-align: center;
 	}
+}
+
+@media (max-width: 350px) {
+	.title-banner {
+		font-size: 20px;
+		padding-bottom: 23em;
+	} 
 }
 
 /* Getting the cards and grids right */ 
