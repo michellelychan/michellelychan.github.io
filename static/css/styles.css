@@ -409,6 +409,16 @@ section p {
  }
 
  @media (max-width: 420px) {
+	h2 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	section {
+		margin-top: 60px;
+	}
+	.portfolio-banner {
+		padding: 6rem 2rem 0rem 2rem;
+	}
 	.portfolio-title {
 		font-size: 35px;
 		text-align: center;
@@ -735,6 +745,7 @@ strong {
 	color: #3A3A3A;
 	text-align: center;
 	font-weight:500;
+	margin-bottom: 60px;
 }
 
 .user-testimonials-description > .emphasis { 
