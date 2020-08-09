@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Michelle Chan | SCMP Project Nemo (SEO)</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-70708985-1', 'auto');
+			  ga('send', 'pageview');
+
+		</script>
+	</head>
+
+	<body>
+		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
+			<nav>
+				<a href="index.html" class="icon"> 
+					<img alt="Home" src="favicon.ico">
+				</a>
+				<div id="menu-toggle">
+					<a class="menu" href="">Menu</a>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="/michelle-chan-design-resume.pdf">Resume</a>
+						</li>	
+						<li>
+							<a href="/graphic-design.html">Graphic Design</a>
+						</li>
+						<li>
+							<a href="/projects.html">Projects</a>
+						</li>	
+						<li>
+							<a href="/photography.html">Photography</a>
+						</li>	
+
+					</ul>
+				</div>
+
+				<ul id="menu-normal">
+					<li>
+						<a href="/michelle-chan-design-resume.pdf">Resume</a>
+					</li>
+					<li>
+						<a href="/graphic-design.html">Graphic Design</a>
+					</li>
+					<li>
+						<a href="/projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="/photography.html">Photography</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+
+		<div class="portfolio-banner">
+			<div class="portfolio-title" >SCMP</div>
+			<div class="portfolio-title" >Project Nemo</div>
+			<div class="portfolio-subtitle" id="support-color">Improve SEO traffic with automated keyword insights using NLP</div>
+		</div> 
+
+		<div class="large-container">
+			<img alt="Runscope Mission Control" src="../static/img/scmp_nemo_hackathon.png">
+			
+			<div class="project-description-container">
+				
+				<div class="task-container">
+					<h4>ABOUT PROJECT NEMO</h4>
+					<a>Project Nemo was an idea that came out of a hackathon that later turned into reality with investment from senior leadership. I pitched this idea to members from product, audience growth, SEO, and editorial and we formed the team that not only won this hackathon but continued this project throughout the year.  </a>
+				</div>
+
+				<div class="about-container">
+					<h4>ABOUT THE COMPANY</h4>
+					<a>SCMP's mission is to lead the global conversation about China. In 2016, Alibaba acquired SCMP and the company led a series of digital transformation, expanding its readership globally through digital innovation, new  formats, and easier access to content.</a>
+				</div>
+
+			</div>
+
+			<hr> 
+
+			<section class="row">
+				<div class="large-quote" style="max-width: 850px; margin-left: auto; margin-right: auto;">Nemo helps people involved in the editorial process to identify important SEO keywords from their articles to increase SEO traffic. </div>
+
+				<div class="center-case">
+					<h2>THE PROBLEM</h2>
+					<p>SEO contributes to nearly 40% of our monthly active users, and its performance is greatly determined by the way content is written. At SCMP, we have 300 journalists publishing news articles every day and they are often extremely busy. While some editors are interested in increasing their SEO traffic, they often do not have the time to do any SEO research to figure out which keywords they should use or which topics they should write more about. </p>
+				</div>
+			</section>
+
+			<section class="row">
+				<div class="center-case">
+					<h2>SOLUTION</h2>
+					<p>In order to solve this problem, we created Project Nemo, which leverages natural language processing to scan our article content and extract or suggest SEO friendly keywords that were relevant to each article. Our team decided to codename this project &ldquo;Nemo&rdquo; because finding the right keywords is often as challenging as searching for the fish in the Pixar film, Finding Nemo.  </p>
+				</div>
+
+				<img alt="How Runscope Team uses Mission Control" class="margin-top-bottom-10 medium-large" src="../static/img/scmp_nemo_input_output.png">
+
+				<img alt="How Runscope Team uses Mission Control" class="margin-top-bottom-10 medium-large" src="../static/img/scmp_nemo_mechanism.png">
+
+				<div class="center-case">
+					<p>In the process of extracting keywords,  we have done a series of data cleaning (eg. removing stop words) and adopted three NLP models: TF-IDF, YAKE, and SPACY. The keywords are then fed into SEO traffic related API including Google Trends, SEMRush, and internal SCMP traffic data to generate a list of keywords with their search trends. </p>
+				</div>
+
+				
+			</section> 
+
+			<section class="row">
+				<div class="center-case">
+					<h2>HOW IS NEMO USED? </h2>
+
+					<p><b>1. Integrated to Swing - our internal publishing tool</b></p>
+
+					<p>We have integrated Nemo with Swing, the internal publisher tool that editorial is using to write and publish their articles. In swing, we started with adding 1) a keywords section that attracts keywords from the article and attaches search data to each keyword. After building 1), we have run a series of beta tests with specific editorial desks for feedback. Our next step is to build 2) a suggestor tool that suggests more important keywords that can be included in the SEO headline, index headline or bullet summary. </p> 
+
+					<img alt="How Runscope Team uses Mission Control" class="margin-top-bottom-10" src="../static/img/scmp_nemo_swing_integration.png"> 
+
+				</div>
+
+
+				<div class="center-case">
+					<p><b>2. Evergreen article keyword alerts </b></p>
+
+					<p>Our next goal is to create an evergreen article keyword alert tool that can analyze the traffic of past SCMP articles and identify keywords with a spike traffic. For example, if there are a group of articles about &ldquo;Daniel Zhang&rdquo; (CEO of Alibaba Group) in the Technology section with a spike in traffic, we can alert the newsroom to write more articles about the topic. </p>
+
+					<img alt="How Runscope Team uses Mission Control" class="margin-top-bottom-10" src="../static/img/scmp_nemo_evergreen_alert_tool.png"> 
+
+					<p>We can then aggregate these data insights to create dashboards for specific desks with trending SEO keywords tailored to the content that they are writing. These dashboards are more helpful than common Google Trends, MOZ, or SEMRush tools because they are tailored specifically for SCMP, combining article insights from its pool of historically published content. </p>
+
+				</div>
+				
+			</section>
+
+			<section class="row" style="padding-bottom: 200px;">
+				<div class="center-case">
+					<h2>IMPACT</h2>
+					<p>After running a series of beta tests and feedback sessions with editorial, we have received great feedback about our tool as it has helped them in their process of identifying SEO keywords. It's hard to completely isolate the impact of Nemo on search traffic (as we cannot run SEO-related A/B tests on published articles due to issues with journalistic integrity), but organic traffic of the specific desks that we beta-tested have increased by 30% in the two months of testing.  The marketing & SEO team have also seen tangible improvements in keyword search ranking of selected keywords for the desks. </p>
+				</div>
+				
+			</section>
+
+		
+		</div> 
+
+		<script type="text/javascript">
+			$(window).scroll(function(e) {
+				if ($(this).scrollTop() > 1) {
+					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
+				}	else {
+					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
+				}
+							
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(".menu").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#portfolio-top-header").toggleClass("slide-down").toggleClass("fixed-position");
+				$(".portfolio-banner").toggleClass("portfolio-banner-small-padding");
+			});
+		</script>
+
+
+	</body>
+
+</html>
