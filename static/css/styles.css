@@ -1,7 +1,7 @@
 /* General */ 
 
 a {
-	font-family: 'PT Serif';
+	font-family: 'PT Serif', 'Georgia', serif;
 	font-weight: 400;
 	font-size: 19px;
 	color: #000000;
@@ -17,8 +17,8 @@ h4 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 700;
 	font-size: 25px;
+	line-height: 30px;
 	color: #000000;
-	line-height: 0px;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -38,12 +38,17 @@ hr {
 	border-style: none;
 }
 
-p {
+p, li {
 	font-family: 'PT Serif';
 	font-weight: 400;
 	font-size: 19px;
 	color: #000000;
 	line-height: 36px;
+}
+
+li {
+	text-align: left;
+	padding-bottom: 20px;
 }
 
 body {
@@ -392,6 +397,17 @@ section p {
 	position: relative;
 }
 
+.large-quote {
+	font-family: 'PT Serif', 'Georgia', serif;
+	font-size: 40px;
+	font-style: italic;
+	color: #0088DF;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
 @media screen and (max-width: 1200px) {
 	.portfolio-title {
 		font-size: 70px;
@@ -435,6 +451,14 @@ section p {
 		font-size: 20px;
 		text-align: center;
 		line-height: 28px;
+		margin-top: 20px;
+	}
+
+	.large-quote {
+		font-size: 30px;
+		line-height: 40px;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
  }
 
@@ -517,6 +541,16 @@ section p {
 		text-align: center;
 	}
 	
+}
+
+img.medium-large {
+	width: 80%;
+}
+
+@media (max-width: 420px) {
+	img.medium-large {
+		width: 95%;
+	}
 }
 
 .center-case {
