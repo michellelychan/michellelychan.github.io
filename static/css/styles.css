@@ -13,6 +13,12 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+a.text-link {
+	font-weight: 700;
+	text-decoration: underline; 
+	color: #0079e2;
+}
+
 h4 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 700;
