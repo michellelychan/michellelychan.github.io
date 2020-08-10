@@ -156,7 +156,7 @@ body {
 .title-banner {
 	background-color: #F8EFEA;
 	position: relative; 
-	padding: 3rem 4rem 13rem 4rem;
+	padding: 3rem 4rem 5rem 4rem;
 	max-height: 90%;
 }
 
@@ -212,7 +212,7 @@ body {
 
 @media (min-width: 1800px) {
 	.tagline {
-		padding-left: 5%;
+		padding-left: 10%;
     	font-size: 2.8vw;
     	padding-top: 80px;
 	}
@@ -220,7 +220,13 @@ body {
 		display: none;
 	}*/
 	.title-banner {
-		padding: 3rem 4rem 10rem 4rem;
+		padding: 3rem 4rem 5rem 4rem;
+	}
+}
+
+@media(max-width: 1800px) and (min-width: 768px) {
+	.tagline {
+		padding-left: 10%;
 	}
 }
 
