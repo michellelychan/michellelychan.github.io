@@ -205,7 +205,6 @@ body {
 
 .tagline > a {
 	text-decoration: underline;
-    color: #0e9ac7;
     font-weight: bold;
     font-size: inherit;
 }
@@ -287,6 +286,23 @@ body {
 	overflow: auto;
 }
 
+.portfolio-one-project-row {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.portfolio-one-project-row .card-container .card-text {
+	padding-top: 20px;
+	padding-left: 40px;
+}
+
+@media (max-width: 680px) {
+	.portfolio-one-project-row .card-container .card-text {
+		padding: 0px;
+	}
+}
+
+
 .card-container {
 	width: 100%; 
 	height: 100%;
@@ -305,14 +321,39 @@ body {
 }
 
 .card-subtitle {
-	font-family: 'PT Serif', Georgia, Times, serif;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;	
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000000;
+	text-align: left;
+	text-transform: uppercase;
+	padding: 20px 0px 5px 0px; 
+
+	/*font-family: 'PT Serif', Georgia, Times, serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: #baaab0;
 	padding: 12px 0px;
 	list-style: none;
 	text-decoration: none;
-	text-align: center;
+	text-align: center;*/
+}
+
+.card-description {
+	font-family: 'PT Serif', Georgia, Times, serif;
+	font-weight: 400;
+	font-size: 16px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.card-container .product-types {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+    opacity: 0.3;
+    text-transform: uppercase;
 }
 
 .zoom-effect img {
