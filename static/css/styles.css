@@ -95,6 +95,7 @@ body {
 	display: none;
 	text-align: center; 
 	margin-top: 8px;
+	margin-bottom: 8px;
 	float: middle;
 }
 
@@ -159,8 +160,9 @@ body {
 /* Design of the Banner */ 
 
 .title-banner {
-	background-color: #F4F1F0;
-/*	background-color: #F8EFEA;
+	background-color: #fbf0ed;
+/*	background-color: #F4F1F0;
+*//*	background-color: #F8EFEA;
 */	position: relative; 
 	padding: 3rem 4rem 5rem 4rem;
 	max-height: 90%;
@@ -196,7 +198,6 @@ body {
 	font-weight: bold;
 }
 
-
 .tagline-box {
 	width: 380px;
 	width: 30vw;
@@ -214,6 +215,28 @@ body {
 	text-decoration: underline;
     font-weight: bold;
     font-size: inherit;
+}
+
+.title-banner-tagline-border {
+	border-style: solid;
+    max-width: 400px;
+    margin-left: 0;
+    height: 5px;
+    background-color: black;
+}
+
+@media (max-width: 1400px) {
+	.title-banner-tagline-border {
+		max-width: 280px;
+    	height: 3px;
+	}
+}
+
+@media (max-width: 860px) {
+	.title-banner-tagline-border {
+		max-width: 200px;
+    	height: 2px;
+	}
 }
 
 @media (min-width: 1800px) {
@@ -244,11 +267,15 @@ body {
 	    max-width: 90%;
 	}	
 	.title-banner {
-		padding:100px 20px 20em 20px;
+		padding:100px 20px 6em 20px;
 	}
 	.tagline-box {
 		width: 230px;
 		top: 250px;
+	}
+
+	.title-banner-tagline-border {
+		display: none;
 	}
 }
 
@@ -276,10 +303,16 @@ body {
 	}
 }
 
+@media (max-width: 440px) {
+	.title-banner {
+		padding-bottom: 10em;
+	}
+}
+
 @media (max-width: 350px) {
 	.title-banner {
 		font-size: 20px;
-		padding-bottom: 23em;
+		padding-bottom: 15em;
 	} 
 }
 
