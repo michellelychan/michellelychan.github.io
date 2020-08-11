@@ -172,7 +172,7 @@ body {
 	font-weight: 700;
 	font-size: 202px;
 	font-size: 14vw; 
-	color: #ffffff;
+	color: #fdf9f9;
 /*	color: #ffdedc;
 */	line-height: 1em;
 	text-align: right;
@@ -374,7 +374,7 @@ body {
 	color: #000000;
 	text-align: left;
 	text-transform: uppercase;
-	padding: 20px 0px 5px 0px; 
+	padding: 20px 0px 20px 0px; 
 
 	/*font-family: 'PT Serif', Georgia, Times, serif;
 	font-weight: 400;
