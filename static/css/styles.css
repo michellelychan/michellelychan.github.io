@@ -159,8 +159,9 @@ body {
 /* Design of the Banner */ 
 
 .title-banner {
-	background-color: #F8EFEA;
-	position: relative; 
+	background-color: #F4F1F0;
+/*	background-color: #F8EFEA;
+*/	position: relative; 
 	padding: 3rem 4rem 5rem 4rem;
 	max-height: 90%;
 }
@@ -170,8 +171,9 @@ body {
 	font-weight: 700;
 	font-size: 202px;
 	font-size: 14vw; 
-	color: #ffdedc;
-	line-height: 1em;
+	color: #ffffff;
+/*	color: #ffdedc;
+*/	line-height: 1em;
 	text-align: right;
 	text-transform: uppercase;
 	position: relative;
