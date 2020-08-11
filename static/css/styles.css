@@ -22,7 +22,7 @@ a.text-link {
 h4 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 24px;
 	line-height: 30px;
 	color: #000000;
 	text-align: left;
@@ -32,11 +32,10 @@ h4 {
 h2 {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 37px;
 	color: #000000;
 	line-height: 50px;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 hr {
@@ -316,6 +315,13 @@ body {
 	} 
 }
 
+/*h2.homepage-section-title {
+	font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}*/
+
 /* Getting the cards and grids right */ 
 .large-container {
 	width: 90%;
@@ -472,22 +478,21 @@ section p {
 }
 
 .portfolio-title {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	font-size: 90px;
-	line-height: 1em;
+	font-family: 'Georgia', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 1.3em;
 	text-align: left;
-	text-transform: uppercase;
-	position: relative;
+*/	position: relative;
 }
 
 .portfolio-subtitle {
 	font-family: PlayfairDisplay-Regular, Georgia, Times, serif;
-	font-size: 40px;
+	font-size: 25px;
 	line-height: 1.5em;
 	text-align: left;
 	position: relative;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .large-quote {
@@ -503,17 +508,17 @@ section p {
 
 @media screen and (max-width: 1200px) {
 	.portfolio-title {
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 	.portfolio-subtitle {
-		font-size: 30px;
+		font-size: 24px;
 	}
  }
 
 @media screen and (max-width: 800px) {
 	.portfolio-title {
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
 	}
 
@@ -561,7 +566,7 @@ section p {
 	}
 
 	#support-color {
-		color: #00CCFF;
+		color: #079abf;
 	}
 
 	#theboola-color {
