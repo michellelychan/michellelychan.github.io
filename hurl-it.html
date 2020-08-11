@@ -28,48 +28,7 @@
 	</head>
 
 	<body>
-		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
-			<nav>
-				<a href="index.html" class="icon"> 
-					<img alt="Home" src="favicon.ico">
-				</a>
-				<div id="menu-toggle">
-					<a class="menu" href="">Menu</a>
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="/michelle-chan-design-resume.pdf">Resume</a>
-						</li>	
-						<li>
-							<a href="/graphic-design.html">Graphic Design</a>
-						</li>
-						<li>
-							<a href="/projects.html">Projects</a>
-						</li>	
-						<li>
-							<a href="/photography.html">Photography</a>
-						</li>	
-
-					</ul>
-				</div>
-
-				<ul id="menu-normal">
-					<li>
-						<a href="/michelle-chan-design-resume.pdf">Resume</a>
-					</li>
-					<li>
-						<a href="/graphic-design.html">Graphic Design</a>
-					</li>
-					<li>
-						<a href="/projects.html">Projects</a>
-					</li>
-					<li>
-						<a href="/photography.html">Photography</a>
-					</li>
-				</ul>
-			</nav> 
+		<div id="portfolio-top-header" class="static-nav fixed-position">
 		</div>
 
 		<div class="portfolio-banner">
@@ -153,6 +112,12 @@
 		</div> 
 
 		<script type="text/javascript">
+			$(function(){
+ 				 $("#portfolio-top-header").load("nav.html");
+			});
+		</script>
+		
+		<script type="text/javascript">
 			$(window).scroll(function(e) {
 				if ($(this).scrollTop() > 1) {
 					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
@@ -163,14 +128,7 @@
 			});
 		</script>
 
-		<script type="text/javascript">
-			$(".menu").click(function(e) {
-				$("#menu-toggle").children().toggleClass("nav-open");
-				e.preventDefault();
-				$("#portfolio-top-header").toggleClass("slide-down").toggleClass("fixed-position");
-				$(".portfolio-banner").toggleClass("portfolio-banner-small-padding");
-			});
-		</script>
+		
 
 
 	</body>

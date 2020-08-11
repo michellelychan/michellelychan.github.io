@@ -28,48 +28,7 @@
 
 	<body>
 
-		<div id="portfolio-top-header" class ="static-nav fixed-position"> 
-			<nav>
-				<a href="index.html" class="icon"> 
-					<img alt="Home" src="favicon.ico">
-				</a>
-				<div id="menu-toggle">
-					<a class="menu" href="">Menu</a>
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="/michelle-chan-design-resume.pdf">Resume</a>
-						</li>	
-						<li>
-							<a href="/graphic-design.html">Graphic Design</a>
-						</li>
-						<li>
-							<a href="/projects.html">Projects</a>
-						</li>	
-						<li>
-							<a href="/photography.html">Photography</a>
-						</li>	
-
-					</ul>
-				</div>
-
-				<ul id="menu-normal">
-					<li>
-						<a href="/michelle-chan-design-resume.pdf">Resume</a>
-					</li>
-					<li>
-						<a href="/graphic-design.html">Graphic Design</a>
-					</li>
-					<li>
-						<a href="/projects.html">Projects</a>
-					</li>
-					<li>
-						<a href="/photography.html">Photography</a>
-					</li>
-				</ul>
-			</nav> 
+		<div id="portfolio-top-header" class="static-nav fixed-position">
 		</div>
 
 		<div class="photography-large-container">
@@ -83,6 +42,12 @@
 		</div>
 
 		<script type="text/javascript">
+			$(function(){
+ 				 $("#portfolio-top-header").load("nav.html");
+			});
+		</script>
+
+		<script type="text/javascript">
 			$(window).scroll(function(e) {
 				if ($(this).scrollTop() > 1) {
 					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
@@ -90,16 +55,6 @@
 					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
 				}
 							
-			});
-		</script>
-
-
-		<script type="text/javascript">
-			$(".menu").click(function(e) {
-				$("#menu-toggle").children().toggleClass("nav-open");
-				e.preventDefault();
-				$("#portfolio-top-header").delay(400).toggleClass("slide-down").delay(300).toggleClass("fixed-position");
-				$(".photography-large-container").toggleClass("margin-top-0");
 			});
 		</script>
 
@@ -115,16 +70,6 @@
 			});
 		</script>
 
-		<script type="text/javascript">
-			$(window).scroll(function(e) {
-				if ($(this).scrollTop() > 1) {
-					$("#portfolio-top-header").removeClass("static-nav").addClass("scroll-nav");
-				}	else {
-					$("#portfolio-top-header").removeClass("scroll-nav").addClass("static-nav");
-				}
-							
-			});
-		</script>
 
 	</body>
 

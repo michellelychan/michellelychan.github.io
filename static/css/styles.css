@@ -119,6 +119,11 @@ body {
 	color: #000000;
 }
 
+.menu-mobile-items.nav-open li {
+	text-align: center;
+	opacity: 0.6;
+}
+
 .slide-down {
 	position: relative; 
 	/* background-color: #F8EFEA; */

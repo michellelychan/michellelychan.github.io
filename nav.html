@@ -1,0 +1,56 @@
+<nav>
+	<div class="icon"> 
+		<a href="/index.html"><img alt="Home" src="favicon.ico"></a>
+	</div>
+	<div id="menu-toggle">
+		<a class="menu" href="">Menu</a>
+		<ul class="menu-mobile-items">
+			<li>
+				<a href="index.html">Projects</a>
+			</li>
+			<li>
+				<a href="/michelle-chan-resume.pdf">Resume</a>
+			</li>	
+			<li>
+				<a href="/graphic-design.html">Graphic Design</a>
+			</li>
+			<li>
+				<a href="/projects.html">Projects</a>
+			</li>	
+			<li>
+				<a href="/photography.html">Photography</a>
+			</li>
+		</ul>
+	</div>
+
+	<ul id="menu-normal">
+		<!-- <li>
+			<a href="/projects.html">Projects</a>
+		</li> -->
+		<li>
+			<a href="/index.html">Projects</a>
+		</li>
+		<li>
+			<a href="/michelle-chan-resume.pdf">Resume</a>
+		</li>
+		<li>
+			<a href="/graphic-design.html">Paintings & Design</a>
+		</li>
+		
+		<li>
+			<a href="/photography.html">Photography</a>
+		</li>
+	</ul>
+</nav>
+
+<script type="text/javascript">
+			$(".menu").click(function(e) {
+				$("#menu-toggle").children().toggleClass("nav-open");
+				e.preventDefault();
+				$("#portfolio-top-header").toggleClass("slide-down").toggleClass("fixed-position");
+				$(".portfolio-banner").toggleClass("portfolio-banner-small-padding");
+			});
+</script>
+
+
+
