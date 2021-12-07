@@ -61,6 +61,8 @@ body {
 }
 
 
+
+
 /* the overall top navigation bar */ 
 #top-header {
 	/* background: #F8EFEA; */
@@ -505,6 +507,17 @@ section p {
 	line-height: 50px;
 	margin-top: 70px;
 	margin-bottom: 70px;
+}
+
+.medium-quote {
+	font-family: 'PT Serif', 'Georgia', serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #0088DF;
+	text-align: center;
+	line-height: 36px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1200px) {
