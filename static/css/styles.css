@@ -369,6 +369,13 @@ body {
 	height: auto;
 }
 
+@media screen and (min-width: 680px) {
+	.span-3-double-card {
+		width: 90%;
+	}
+}
+
+
 .card-subtitle {
 	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;	
 	font-weight: 700;
